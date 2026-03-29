@@ -8,13 +8,13 @@ echo "        OPEN SOURCE SYSTEM REPORT"
 echo "=============================================="
 
 # Variables
-STUDENT_NAME="Your Name"
+STUDENT_NAME="Dixita nema"
 SOFTWARE="Git"
 
 # System Info
 KERNEL=$(uname -r)
-HOSTNAME=$(hostname)
-USER_NAME=$(whoami)
+HOSTNAME=$(dixita)
+USER_NAME=$(dixita-01-nema)
 HOME_DIR=$HOME
 UPTIME=$(uptime -p)
 DATE=$(date)
@@ -37,13 +37,13 @@ MEM=$(free -h | awk '/Mem:/ {print $2}')
 DISK=$(df -h / | awk 'NR==2 {print $2}')
 
 # Output
-echo "Student Name   : $STUDENT_NAME"
+echo "Student Name   : $DIXITA_NEMA"
 echo "Software       : $SOFTWARE"
 echo "Hostname       : $HOSTNAME"
 echo "Kernel Version : $KERNEL"
 echo "Architecture   : $ARCH"
 echo "Distribution   : $DISTRO"
-echo "User           : $USER_NAME"
+echo "User           : $dixita-01-nema"
 echo "Home Directory : $HOME_DIR"
 echo "System Uptime  : $UPTIME"
 echo "Date & Time    : $DATE"
