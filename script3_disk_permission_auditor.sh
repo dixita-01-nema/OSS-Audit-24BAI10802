@@ -25,7 +25,6 @@ for DIR in "${DIRS[@]}"; do
     fi
 done
 
-# Git Binary Check
 echo "Checking Git Binary Location..."
 which git
 
