@@ -5,7 +5,6 @@ echo "======================================"
 echo " OPEN SOURCE MANIFESTO GENERATOR"
 echo "======================================"
 
-# Input validation
 while [ -z "$TOOL" ]; do
     read -p "1. Name an open-source tool: " TOOL
 done
