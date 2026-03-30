@@ -7,7 +7,6 @@ echo "======================================"
 echo "   FOSS PACKAGE INSPECTOR"
 echo "======================================"
 
-# Check installation
 if command -v $PACKAGE &>/dev/null; then
     echo "[✔] $PACKAGE is installed"
     VERSION=$($PACKAGE --version)
@@ -15,7 +14,6 @@ if command -v $PACKAGE &>/dev/null; then
 
     echo "--------------------------------------"
 
-    # Detect package manager
     if command -v dpkg &>/dev/null; then
         echo "Using dpkg (Debian-based system)"
         dpkg -s $PACKAGE | grep -E 'Version|Maintainer'
@@ -29,7 +27,6 @@ else
     echo "[✘] $PACKAGE is NOT installed"
 fi
 
-# Philosophy notes
 echo "--------------------------------------"
 echo "Open Source Philosophy Notes:"
 
